@@ -14,6 +14,7 @@ require('laravel-elixir-vue-2');
  */
 
 elixir((mix) => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+    mix.sass('app.sass')
+        .copy('node_modules/materialize-css/fonts', 'public/fonts')
+        .webpack('app.js');
 });

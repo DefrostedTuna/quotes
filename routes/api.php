@@ -19,25 +19,47 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/quotes', [
     'as' => 'api.quotes',
-    'uses' => 'Api\QuotesController@getIndex'
+    'uses' => 'Api\QuotesController@getIndex',
 ]);
 
-Route::post('quotes', [
+Route::post('/quotes', [
     'as' => 'api.quotes.store',
-    'uses' => 'Api\QuotesController@postStore'
+    'uses' => 'Api\QuotesController@postStore',
+]);
+
+Route::get('/quotes/random', [
+    'as' => 'api.quotes.random',
+    'uses' => 'Api\QuotesController@getRandom',
 ]);
 
 Route::get('/quotes/{id}', [
     'as' => 'api.quotes.show',
-    'uses' => 'Api\QuotesController@getShow'
+    'uses' => 'Api\QuotesController@getShow',
 ]);
 
 Route::patch('/quotes/{id}/edit', [
     'as' => 'api.quotes.update',
-    'uses' => 'Api\QuotesController@postUpdate'
+    'uses' => 'Api\QuotesController@postUpdate',
 ]);
 
 Route::delete('/quotes/{id}', [
     'as' => 'api.quotes.destroy',
     'uses' => 'Api\QuotesController@postDestroy',
 ]);
+
+// Authors
+Route::get('/authors', [
+    'as' => 'api.authors',
+    'uses' => 'Api\AuthorsController@getIndex',
+]);
+
+Route::get('/authors/random', [
+    'as' => 'api.authors.random',
+    'uses' => 'Api\AuthorsController@getRandom',
+]);
+
+Route::get('/authors/{id}', [
+    'as' => 'api.authors.show',
+    'uses' => 'Api\AuthorsController@getShow',
+]);
+

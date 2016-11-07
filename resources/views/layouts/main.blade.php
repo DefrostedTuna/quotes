@@ -25,7 +25,6 @@
 </div>
 
 
-
 <!-- Compiled Webpack JS -->
 <script src="{{ asset('js/app.js') }}"></script>
 

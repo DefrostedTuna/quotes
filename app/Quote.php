@@ -33,8 +33,6 @@ class Quote extends Model
         $author     = \App\Author::firstOrCreate(['name' => $request->author]);
         $quote      = \App\Quote::firstOrNew(['text' => $request->text]);
 
-        // We set the 'load' method because Eloquent does not
-        // return the Author with the created model.
         return $author->quotes()->save($quote);
     }
 }

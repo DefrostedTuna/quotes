@@ -185,6 +185,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+
 
     ],
 

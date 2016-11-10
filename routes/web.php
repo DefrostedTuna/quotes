@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
+
+
 Route::get('/', [
     'as' => 'home',
     'uses' => 'HomeController@getIndex'

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Merriweather+Sans|Niconne|Tangerine");
 /*!
  * Materialize v0.97.8 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -6982,7 +6984,30 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     display: block;
     color: rgba(0, 0, 0, 0.54); }
 
+.landing__header--container {
+  min-height: 600px;
+  width: 100%;
+  padding-top: 63px; }
+
+.headline-quote {
+  max-width: 600px;
+  margin: 5em auto;
+  font-family: "Merriweather-LightItalic", serif;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.87); }
+
+.headline-author {
+  text-align: right; }
+
+.landing__second--container {
+  background: black;
+  height: 700px; }
+
 .spacer {
   height: 500px; }
+
+body {
+  background: white; }
 
 /*# sourceMappingURL=app.css.map */

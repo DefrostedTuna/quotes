@@ -17,7 +17,7 @@
 
 @include('layouts.partials.mobile-nav')
 
-<div id="panel">
+<div id="root-body">
     @include('layouts.partials.nav')
     <div id="app">
         @yield('content')

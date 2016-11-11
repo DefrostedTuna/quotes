@@ -2,16 +2,16 @@
     <div class="nav__full--wrap">
         <a href="" class="nav__logo"><strong>Uptilt</strong> Quotes</a>
         <ul class="nav__links">
-            <li class="hover-link">
+            <li>
                 <a href="">Home</a>
             </li>
-            <li class="hover-link">
+            <li>
                 <a href="">Quotes</a>
             </li>
-            <li class="hover-link">
+            <li>
                 <a href="">Authors</a>
             </li>
-            <li class="hover-link">
+            <li>
                 <a href="">About</a>
             </li>
         </ul>

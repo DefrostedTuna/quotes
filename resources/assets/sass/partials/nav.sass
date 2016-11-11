@@ -1,13 +1,13 @@
 .nav__full--container
+  z-index: 1
   position: fixed
   top: 0
   left: 0
   right: 0
   height: 63px
   background: white
-  //box-shadow: $box-shadow--standard
   border-bottom: 1px solid rgba(0, 0, 0, 0.14)
-  transition: box-shadow .5s ease
+  transition: box-shadow .5s ease, background .5s ease, color .5s ease
 
 .nav__full--wrap
   height: 63px
@@ -17,6 +17,7 @@
 .nav__logo
   font-size: 21px
   color: $text__black--secondary
+  transition: color .5s ease
 
 .nav__links
   float: right

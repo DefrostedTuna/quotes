@@ -20,6 +20,8 @@ const app = new Vue({
 });
 
 $(window).scroll(function() {
+    var header_height = parseInt($('.landing__header--container').css('height'));
+    console.log(header_height);
     if ($(this).scrollTop() == 0) {
         $('.nav__full--container').css({
             'box-shadow': 'none',
@@ -31,5 +33,29 @@ $(window).scroll(function() {
             'box-shadow': '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)',
             '-moz-box-shadow' : '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)',
             '-webkit-box-shadow' : '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)' });
+    }
+    if ($(this).scrollTop() >= (header_height - 63)) {
+        $('.nav__full--container').css({
+            //'background': '#263238'
+            'background': '#37474F',
+            //'box-shadow': 'none'
+
+        });
+        $('.nav__logo').css({
+            'color': 'white'
+        });
+        $('.nav__links a').css({
+            'color': 'white'
+        });
+    } else {
+        $('.nav__full--container').css({
+            'background': ''
+        });
+        $('.nav__logo').css({
+            'color': ''
+        });
+        $('.nav__links a').css({
+            'color': ''
+        });
     }
 });

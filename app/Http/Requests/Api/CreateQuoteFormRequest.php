@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Api;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -19,8 +19,8 @@ class CreateQuoteFormRequest extends FormRequest
     public function messages()
     {
         return [
-            'text.required'         => 'The Quote field is required.',
-            'text.min'              => 'The Quote field must be at least 3 characters.',
+            'text.required' => 'The Quote field is required.',
+            'text.min'      => 'The Quote field must be at least 3 characters.'
         ];
 
     }
@@ -33,9 +33,8 @@ class CreateQuoteFormRequest extends FormRequest
     public function rules()
     {
         return [
-//            'text'      => 'required|min:3',
-//            'author'    => 'required|min:3',
-            'g-recaptcha-response'  => 'required|captcha'
+            'text'      => 'required|min:3',
+            'author'    => 'required|min:3'
         ];
     }
 }

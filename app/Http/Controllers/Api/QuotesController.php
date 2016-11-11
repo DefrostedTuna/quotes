@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Requests\CreateQuoteFormRequest;
+use App\Http\Requests\Api\CreateQuoteFormRequest;
 use App\Quote;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;

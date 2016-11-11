@@ -19,9 +19,7 @@
 
 <div id="root-body">
     @include('layouts.partials.nav')
-    <div id="app">
-        @yield('content')
-    </div>
+    @yield('content')
 </div>
 
 

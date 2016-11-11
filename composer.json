@@ -11,7 +11,8 @@
         "barryvdh/laravel-debugbar": "^2.3",
         "graham-campbell/exceptions": "^9.1",
         "laravelcollective/html": "^5.3",
-        "rap2hpoutre/laravel-log-viewer": "^0.7.0"
+        "rap2hpoutre/laravel-log-viewer": "^0.7.0",
+        "anhskohbo/no-captcha": "^2.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

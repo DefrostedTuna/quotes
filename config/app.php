@@ -186,6 +186,7 @@ return [
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
+        Anhskohbo\NoCaptcha\NoCaptchaServiceProvider::class,
 
 
     ],

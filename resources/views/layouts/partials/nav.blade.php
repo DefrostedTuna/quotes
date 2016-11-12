@@ -12,7 +12,7 @@
                 <a href="">Authors</a>
             </li>
             <li>
-                <a href="">About</a>
+                <a href="">API</a>
             </li>
         </ul>
     </div>

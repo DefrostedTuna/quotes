@@ -20,13 +20,15 @@
 <div id="root-body">
     @include('layouts.partials.nav')
     @yield('content')
+    @include('layouts.partials.footer')
 </div>
-
 
 <!-- Compiled Webpack JS -->
 <script src="{{ asset('js/app.js') }}"></script>
-
 <script>
+
+    // Stuff goes here
+
 </script>
 </body>
 </html>

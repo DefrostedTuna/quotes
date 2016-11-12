@@ -33,8 +33,8 @@ class CreateQuoteFormRequest extends FormRequest
     public function rules()
     {
         return [
-//            'text'      => 'required|min:3',
-//            'author'    => 'required|min:3',
+            'text'      => 'required|min:3',
+            'author'    => 'required|min:3',
             'g-recaptcha-response'  => 'required|captcha'
         ];
     }

@@ -6992,6 +6992,23 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     display: block;
     color: rgba(0, 0, 0, 0.54); }
 
+footer {
+  min-height: 50px;
+  background: black;
+  line-height: 50px; }
+  footer .row {
+    margin-bottom: 0 !important; }
+  footer li {
+    display: inline-block; }
+  footer a {
+    color: white; }
+  footer span {
+    display: inline-block;
+    vertical-align: middle; }
+  footer img {
+    width: 30px;
+    vertical-align: middle; }
+
 .landing__header--container {
   min-height: 400px;
   height: 100vh;
@@ -7024,18 +7041,25 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .landing__second--container {
   background: #455A64;
-  height: 1700px;
   color: white; }
 
 .landing__second--wrap {
-  padding-top: 100px; }
+  padding: 100px 0; }
 
 .example-response {
   width: 400px;
   margin: 10px auto; }
 
-#app {
-  background: blue; }
+#quote-circled__1,
+#quote-circled__2 {
+  width: 300px; }
+
+#quote-circled__2 {
+  -webkit-transform: scale(1) rotate(180deg);
+  transform: scale(1) rotate(180deg); }
+
+.landing__arrow-right {
+  width: 200px; }
 
 .font-14 {
   font-size: 14px; }
@@ -7047,6 +7071,9 @@ hr {
   height: 1px;
   border: 0;
   background: rgba(0, 0, 0, 0.38); }
+
+.large-spacer {
+  margin: 100px auto; }
 
 h1,
 h2,

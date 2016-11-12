@@ -23,7 +23,7 @@ class QuotesController extends Controller
 
     public function postStore(CreateQuoteFormRequest $request, Quote $quote)
     {
-        dd("Quote");
+        dd($request->input());
         dd($quote->createQuote($request));
     }
 

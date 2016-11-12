@@ -19,9 +19,9 @@ class Quote extends Model
         'updated_at',
     ];
 
-    protected $with = [
-        'author'
-    ];
+//    protected $with = [
+//        'author'
+//    ];
 
     public function author()
     {

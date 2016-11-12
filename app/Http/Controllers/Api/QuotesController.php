@@ -11,7 +11,7 @@ class QuotesController extends Controller
 {
     public function getIndex(Quote $quote)
     {
-        return response()->json($quote->all()->load('author'), 200);
+        return response()->json($quote->all()->setHidden(['created_at'])->load('author'), 200);
     }
 
     public function postStore(CreateQuoteFormRequest $request, Quote $quote)

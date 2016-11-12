@@ -5,9 +5,9 @@
         <div class="landing__header--wrap">
             <div class="container">
                 <div class="headline-quote--wrap">
-                    <h4 class="headline-quote">My fake plants died because I did not pretend to water them.</h4>
+                    <h4 class="headline-quote">{{ $randomQuote->text }}</h4>
                     <hr>
-                    <p class="headline-author">- Mitch Hedberg</p>
+                    <p class="headline-author">- {{ $randomQuote->author->name }}</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,50 @@
+.nav-mobile--container
+  position: fixed
+  overflow-x: hidden
+  z-index: 3
+  top: 0
+  left: 0
+  bottom: 0
+  width: 0
+  background: white
+  box-shadow: $box-shadow--standard
+  line-height: 50px
+  transition: width .5s ease
+  a
+    display: block
+    line-height: 50px
+    padding: 0 10px
+    margin: 10px 0
+    color: $text__black--secondary
+    font-weight: 500
+    text-transform: uppercase
+  a:hover
+    cursor: pointer
+    background: #FAFAFA
+
+.nav-mobile--container.active
+  width: 300px
+.nav-mobile--mask
+  display: none
+  z-index: 2
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: black
+  filter: opacity(.5)
+.nav-mobile--mask.active
+  display: block
+
+.nav-mobile--wrap
+  padding: 10px
+
+.nav-mobile__search
+  position: relative
+  i
+    position: absolute
+    top: 20%
+    right: 0
+  input
+    width: 250px

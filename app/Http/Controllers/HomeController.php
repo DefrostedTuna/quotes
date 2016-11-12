@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Quote;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function getIndex()
+    public function getIndex(Quote $quote)
     {
-        return view('root-index');
+        $randomQuote = $quote->inRandomOrder()->first();
+
+        return view('root-index')
+            ->with('randomQuote', $randomQuote);
     }
 
     public function getDocs()

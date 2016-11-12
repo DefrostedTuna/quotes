@@ -10,4 +10,9 @@ class HomeController extends Controller
     {
         return view('root-index');
     }
+
+    public function getDocs()
+    {
+        return view('documentation');
+    }
 }

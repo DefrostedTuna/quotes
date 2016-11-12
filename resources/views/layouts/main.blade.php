@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Prism -->
+    <link rel="stylesheet" href="{{ asset('css/prism.css') }}">
 
 </head>
 <body>
@@ -25,6 +27,8 @@
 
 <!-- Compiled Webpack JS -->
 <script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/prism.js') }}"></script>
+@yield('scripts')
 <script>
 
     // Stuff goes here

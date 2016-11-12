@@ -3,7 +3,7 @@
         <a href="" class="nav__logo"><strong>Uptilt</strong> Quotes</a>
         <ul class="nav__links">
             <li>
-                <a href="">Home</a>
+                <a href="{{ route('home') }}">Home</a>
             </li>
             <li>
                 <a href="">Quotes</a>
@@ -12,7 +12,7 @@
                 <a href="">Authors</a>
             </li>
             <li>
-                <a href="">API</a>
+                <a href="{{ route('documentation') }}">API</a>
             </li>
         </ul>
     </div>

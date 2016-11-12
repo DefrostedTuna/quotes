@@ -19,6 +19,11 @@ Route::get('/', [
     'uses' => 'HomeController@getIndex'
 ]);
 
+Route::get('/docs', [
+    'as' => 'documentation',
+    'uses' => 'HomeController@getDocs'
+]);
+
 Route::get('/quotes', [
     'as' => 'quotes.index',
     'uses' => 'QuotesController@getIndex'

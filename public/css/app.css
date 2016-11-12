@@ -7061,6 +7061,12 @@ footer {
 .landing__arrow-right {
   width: 200px; }
 
+.documentation--container {
+  padding-top: 100px; }
+
+.documentation--wrap {
+  margin-bottom: 100px; }
+
 .font-14 {
   font-size: 14px; }
 

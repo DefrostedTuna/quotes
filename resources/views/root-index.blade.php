@@ -62,7 +62,7 @@
                                 {!! app('captcha')->display() !!}
                                 </div>
                                 <br>
-                                <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
+                                <button class="btn waves-effect waves-light right-align blue-grey darken-2" type="submit" name="action">Submit
                                     <i class="material-icons right">send</i>
                                 </button>
                                 {{ Form::close() }}
@@ -73,4 +73,32 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+<script>
+    $(window).on('load scroll', function() {
+        if ($(this).scrollTop() >= (header_height - 63)) {
+            $('.nav__full--container').css({
+                'background': '#37474F'
+            });
+            $('.nav__logo').css({
+                'color': 'white'
+            });
+            $('.nav__links a').css({
+                'color': 'white'
+            });
+        } else {
+            $('.nav__full--container').css({
+                'background': ''
+            });
+            $('.nav__logo').css({
+                'color': ''
+            });
+            $('.nav__links a').css({
+                'color': ''
+            });
+        }
+    });
+</script>
 @endsection

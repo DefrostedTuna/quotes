@@ -6954,12 +6954,36 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 
+body {
+  background: white; }
+
 body.inactive {
   overflow: hidden; }
 
 #root-body.inactive {
   -webkit-filter: blur(1px);
   filter: blur(1px); }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-21 {
+  font-size: 21px; }
+
+hr {
+  height: 1px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.38); }
+
+.large-spacer {
+  margin: 100px auto; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Merriweather", serif; }
 
 .nav__full--container {
   z-index: 1;
@@ -7133,29 +7157,5 @@ footer {
 
 .documentation--wrap {
   margin-bottom: 100px; }
-
-.font-14 {
-  font-size: 14px; }
-
-.font-21 {
-  font-size: 21px; }
-
-hr {
-  height: 1px;
-  border: 0;
-  background: rgba(0, 0, 0, 0.38); }
-
-.large-spacer {
-  margin: 100px auto; }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Merriweather", serif; }
-
-body {
-  background: white; }
 
 /*# sourceMappingURL=app.css.map */

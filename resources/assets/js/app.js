@@ -13,15 +13,34 @@ require('./bootstrap');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', require('./components/Example.vue'));
+//Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#root-body',
+    data: {
+        formInputs: {},
+        formErrors: {}
+    },
+    methods: {
+        submitForm(e) {
+            var form = e.target;
+            this.$http.post(form.action, new FormData(form))
+                .then((response) => {
+                    this.formInputs = {};
+                    this.formErrors = {};
+                    grecaptcha.reset();
+                    Materialize.toast('Thank you! Your quote has been successfully submitted!', 5000);
+                })
+                .catch((response) => {
+                    this.formErrors = response.body;
+                    grecaptcha.reset();
+                    Materialize.toast('There were validation errors. Please fix them to continue.', 5000);
+            });
+        }
+    }
 });
 
 $(window).scroll(function() {
-    var header_height = parseInt($('.landing__header--container').css('height'));
-    console.log(header_height);
     if ($(this).scrollTop() == 0) {
         $('.nav__full--container').css({
             'box-shadow': 'none',

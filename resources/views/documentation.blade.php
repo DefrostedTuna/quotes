@@ -42,9 +42,8 @@
             </p>
 
             <p><strong>Example response</strong></p>
-            <p>
-                <pre class="language-javascript">
-                    <code>
+            <pre class="language-javascript">
+                <code>
 {
   "text": "This is the quote text",
   "author_id": 1,
@@ -58,9 +57,8 @@
     "updated_at": "2016-11-12 17:52:44"
   }
 }
-                    </code>
-                </pre>
-            </p>
+                </code>
+            </pre>
 
             <p>You may also retrieve authors in the same fashion with their respective quotes attached.</p>
 
@@ -74,9 +72,8 @@
             </p>
 
             <p><strong>Example response</strong></p>
-            <p>
-                <pre class="language-javascript">
-                    <code>
+            <pre class="language-javascript">
+                <code>
   {
     "id": 1,
     "name": "Specified author here",
@@ -92,9 +89,8 @@
       }
     ]
   }
-                    </code>
-                </pre>
-            </p>
+                </code>
+            </pre>
 
             <h5>Submitting quotes</h5>
             <p>Submitting a quote is relatively easy as well. Send a <code class="language-markup">POST</code> request with the following information.</p>
@@ -113,9 +109,8 @@
             <p>On a successful entry, you will be given a JSON representation of the object in response.</p>
 
             <p><strong>Example response</strong></p>
-            <p>
-                <pre class="language-javascript">
-                    <code>
+            <pre class="language-javascript">
+                <code>
 {
   "text": "Your awesome quote here",
   "author_id": 1,
@@ -129,9 +124,8 @@
     "updated_at": "2016-11-12 17:52:44"
   }
 }
-                    </code>
-                </pre>
-            </p>
+                </code>
+            </pre>
             <p>
                 <strong>Note:</strong><br>
                 The author will be automatically stored as an entry.

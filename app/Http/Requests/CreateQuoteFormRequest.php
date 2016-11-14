@@ -19,8 +19,9 @@ class CreateQuoteFormRequest extends FormRequest
     public function messages()
     {
         return [
-            'text.required'         => 'The Quote field is required.',
-            'text.min'              => 'The Quote field must be at least 3 characters.',
+            'text.required'                 => 'The Quote field is required.',
+            'text.min'                      => 'The Quote field must be at least 3 characters.',
+            'g-recaptcha-response.required' => 'You must complete the reCaptcha'
         ];
 
     }
@@ -33,8 +34,8 @@ class CreateQuoteFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'text'      => 'required|min:3',
-            'author'    => 'required|min:3',
+            'text'                  => 'required|min:3',
+            'author'                => 'required|min:3',
             'g-recaptcha-response'  => 'required|captcha'
         ];
     }

@@ -7,13 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Uptilt :: Quotes</title>
 
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Prism -->
     <link rel="stylesheet" href="{{ asset('css/prism.css') }}">
-
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
 
@@ -28,9 +27,11 @@
 <!-- Compiled Webpack JS -->
 <script src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/prism.js') }}"></script>
+<script src="{{ asset('js/materialize.js') }}"></script>
 @yield('scripts')
 <script>
-
+    // This is for
+    //window.Laravel = { csrfToken: '{{ csrf_token() }}' };
     // Stuff goes here
 
 </script>

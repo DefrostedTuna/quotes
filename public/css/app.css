@@ -7168,4 +7168,13 @@ footer {
 .search__quote span:last-child {
   text-align: right; }
 
+.input-field {
+  position: relative; }
+
+.form-error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: red; }
+
 /*# sourceMappingURL=app.css.map */

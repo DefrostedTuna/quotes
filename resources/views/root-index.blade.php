@@ -85,7 +85,6 @@
 <script>
     $(window).on('load scroll', function() {
         var header_height = parseInt($('.landing__header--container').css('height'));
-        console.log(header_height);
         if ($(this).scrollTop() >= (header_height - 63)) {
             $('.nav__full--container').css({
                 'background': '#37474F'

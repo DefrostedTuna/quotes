@@ -24,6 +24,15 @@ Route::get('/docs', [
     'uses' => 'HomeController@getDocs'
 ]);
 
+Route::get('/search/{search_string}', [
+    'as' => 'search.global.get',
+    'uses' => 'SearchController@getSearchGlobal'
+]);
+Route::post('/search', [
+    'as' => 'search.global.post',
+    'uses' => 'SearchController@postSearchGlobal'
+]);
+
 Route::get('/quotes', [
     'as' => 'quotes.index',
     'uses' => 'QuotesController@getIndex'

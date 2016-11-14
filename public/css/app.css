@@ -7158,4 +7158,14 @@ footer {
 .documentation--wrap {
   margin-bottom: 100px; }
 
+.search__global--container {
+  min-height: 100vh;
+  padding-top: 100px; }
+
+.search__quote span {
+  display: block; }
+
+.search__quote span:last-child {
+  text-align: right; }
+
 /*# sourceMappingURL=app.css.map */

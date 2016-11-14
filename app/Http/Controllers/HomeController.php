@@ -10,7 +10,7 @@ class HomeController extends Controller
     public function getIndex(Quote $quote)
     {
         $randomQuote = $quote->inRandomOrder()->first();
-
+        //dd($randomQuote);
         return view('root-index')
             ->with('randomQuote', $randomQuote);
     }

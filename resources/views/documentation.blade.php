@@ -14,7 +14,7 @@
                 Submitting a quote is done via a <code class="language-markup">POST</code> request to the correct route.
                 For both options, you will be returned a JSON object of the database entry.
             </p>
-            <p>Here are a list of the available API routes.</p>
+            <p>Here is a list of the available API routes.</p>
             <p><strong>GET</strong></p>
             <p>
                 <code class="language-markup">/api/quotes</code> <br>

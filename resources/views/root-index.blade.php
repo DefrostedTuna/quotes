@@ -54,18 +54,18 @@
                                 {{ Form::open(['route' => 'quotes.store', 'method' => 'post', '@submit.prevent' => 'submitForm']) }}
                                 <div class="input-field">
                                     <input id="input__author" type="text" name="author" class="validate" v-model="formInputs.author">
-                                    <span v-if="formErrors['author']" class="form-error">@{{ formErrors['author'][0] }}</span>
+                                    <span v-if="formErrors['author']" class="form-error" v-cloak>@{{ formErrors['author'][0] }}</span>
                                     <label for="input__author">Author</label>
                                 </div>
                                 <div class="input-field">
                                     <textarea id="input__text" name="text" class="materialize-textarea" v-model="formInputs.text"></textarea>
-                                    <span v-if="formErrors['text']" class="form-error">@{{ formErrors['text'][0] }}</span>
+                                    <span v-if="formErrors['text']" class="form-error" v-cloak>@{{ formErrors['text'][0] }}</span>
                                     <label for="input__text">Quote</label>
                                 </div>
                                 <div class="input-field">
                                     {!! app('captcha')->display() !!}
                                     <br>
-                                    <span v-if="formErrors['g-recaptcha-response']" class="form-error">@{{ formErrors['g-recaptcha-response'][0] }}</span>
+                                    <span v-if="formErrors['g-recaptcha-response']" class="form-error" v-cloak>@{{ formErrors['g-recaptcha-response'][0] }}</span>
                                 </div>
                                 <br>
                                 <button class="btn waves-effect waves-light right-align blue-grey darken-2" type="submit">Submit

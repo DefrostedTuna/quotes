@@ -1,15 +1,15 @@
 <div class="nav__full--container">
     <div class="nav__full--wrap">
-        <a href="" class="nav__logo"><strong>Uptilt</strong> Quotes</a>
+        <a href="{{ route('home') }}" class="nav__logo"><strong>Uptilt</strong> Quotes</a>
         <ul class="nav__links hide-on-small-and-down">
             <li>
                 <a href="{{ route('home') }}">Home</a>
             </li>
             <li>
-                <a href="">Quotes</a>
+                <a href="{{ route('quotes.index') }}">Quotes</a>
             </li>
             <li>
-                <a href="">Authors</a>
+                <a href="{{ route('authors.index') }}">Authors</a>
             </li>
             <li>
                 <a href="{{ route('documentation') }}">API</a>

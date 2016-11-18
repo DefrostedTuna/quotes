@@ -1,9 +1,27 @@
 .search__global--container
-  min-height: 100vh
-  padding-top: 100px
+  min-height: calc(100vh - 80px)
+  padding: 100px 0
 
 .search__quote
+  padding: 1em
+  a
+    color: $text__black--primary
+  &:hover
+    cursor: pointer
+    background: #FAFAFA
   span
     display: block
+    font-weight: 500
   span:last-child
-    text-align: right
+    font-weight: normal
+
+.search__author
+  padding: 1em
+  a
+    color: $text__black--primary
+  &:hover
+    cursor: pointer
+    background: #FAFAFA
+  span
+    display: block
+    font-weight: 500

@@ -1,0 +1,58 @@
+.authors__index--container
+  min-height: calc(100vh - 80px)
+  padding: 100px 0
+
+.author__block
+  padding: 1em
+  a
+    color: $text__black--primary
+  span
+    display: block
+    font-weight: 500
+  &:hover
+    cursor: pointer
+    background: #FAFAFA
+
+
+.authors__show--container
+  min-height: calc(100vh - 143px) // Header height + footer height
+  background: $background-color--main
+  color: $text__white--primary
+  padding: 100px 0
+
+.quote__block
+  padding: 1em
+  font-size: 21px
+  margin-bottom: 1em
+  transition: background .5s ease
+  font-style: italic
+  font-family: $font-family--quotes
+  a
+    color: $text__black--primary
+  span
+    display: block
+    font-weight: 500
+  &:hover
+    cursor: pointer
+    background: rgba(0,0,0, .1)
+    border-radius: 5px
+
+.author__showcase--wrap
+  max-width: 600px
+  margin: 5em auto 0
+
+.author__showcase--quote
+  text-align: right
+  font-style: italic
+  font-family: $font-family--quotes
+
+.author__headline--wrap
+  position: relative
+  max-width: 600px
+  margin-bottom: 2em
+
+.quote__block--hidden,
+.author__headline--wrap
+  transform: translateX(50%)
+  opacity: 0
+  transition: transform .5s ease, opacity .5s ease-in

@@ -1,13 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
-    <div class="landing__header--container">
-        <div class="landing__header--wrap">
+    <div class="full-height--container">
+        <div class="full-height--wrap">
             <div class="container">
                 <div class="headline-quote--wrap">
-                    <h4 class="headline-quote">{{ $randomQuote->text }}</h4>
+                    <h4 class="headline-quote">"{{ $randomQuote->text }}"</h4>
                     <hr>
-                    <p class="headline-author">- {{ $randomQuote->author->name }}</p>
+                    <p class="headline-author"><a href="{{ route('authors.show', $randomQuote->author->id) }}">{{ $randomQuote->author->name }}</a></p>
                 </div>
             </div>
         </div>
@@ -82,30 +82,5 @@
 @endsection
 
 @section('scripts')
-<script>
-    $(window).on('load scroll', function() {
-        var header_height = parseInt($('.landing__header--container').css('height'));
-        if ($(this).scrollTop() >= (header_height - 63)) {
-            $('.nav__full--container').css({
-                'background': '#37474F'
-            });
-            $('.nav__logo').css({
-                'color': 'white'
-            });
-            $('.nav__links a').css({
-                'color': 'white'
-            });
-        } else {
-            $('.nav__full--container').css({
-                'background': ''
-            });
-            $('.nav__logo').css({
-                'color': ''
-            });
-            $('.nav__links a').css({
-                'color': ''
-            });
-        }
-    });
-</script>
+
 @endsection

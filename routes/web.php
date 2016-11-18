@@ -62,3 +62,13 @@ Route::delete('/quotes/{id}', [
     'as' => 'quotes.destroy',
     'uses' => 'QuotesController@postDestroy'
 ]);
+
+Route::get('/authors', [
+    'as' => 'authors.index',
+    'uses' => 'AuthorsController@getIndex'
+]);
+
+Route::get('/authors/{id}', [
+    'as' => 'authors.show',
+    'uses' => 'AuthorsController@getShow'
+]);

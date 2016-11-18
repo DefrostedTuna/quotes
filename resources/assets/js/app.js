@@ -35,7 +35,7 @@ const app = new Vue({
                     this.formErrors = response.body;
                     grecaptcha.reset();
                     Materialize.toast('There were validation errors. Please fix them to continue.', 5000);
-            });
+                });
         }
     }
 });
@@ -52,6 +52,33 @@ $(window).scroll(function() {
             'box-shadow': '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)',
             '-moz-box-shadow' : '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)',
             '-webkit-box-shadow' : '0 2px 10px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 10px -2px rgba(0,0,0,0.2)' });
+    }
+});
+
+$(window).on('load scroll', function() {
+
+    var fullHeightContainer = parseInt($('.full-height--container').css('height'));
+
+    if ($(this).scrollTop() >= (fullHeightContainer - 63)) {
+        $('.nav__full--container').css({
+            'background': '#37474F'
+        });
+        $('.nav__logo').css({
+            'color': 'white'
+        });
+        $('.nav__links a').css({
+            'color': 'white'
+        });
+    } else {
+        $('.nav__full--container').css({
+            'background': ''
+        });
+        $('.nav__logo').css({
+            'color': ''
+        });
+        $('.nav__links a').css({
+            'color': ''
+        });
     }
 });
 

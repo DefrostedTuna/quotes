@@ -14,7 +14,7 @@
         "rap2hpoutre/laravel-log-viewer": "^0.7.0",
         "anhskohbo/no-captcha": "^2.1",
         "nicolaslopezj/searchable": "^1.9",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

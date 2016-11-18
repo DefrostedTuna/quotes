@@ -45,4 +45,9 @@ class Author extends Model
     {
         return $this->hasMany('App\Quote');
     }
+
+    public function randomQuote()
+    {
+        return $this->quotes()->inRandomOrder()->first();
+    }
 }

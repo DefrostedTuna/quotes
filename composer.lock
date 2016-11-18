@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "482df962c9fce43a60b10a8a061a972b",
-    "content-hash": "6858dd12572706748c960abcf2846b01",
+    "hash": "b7ca1237e351c0e1e4d29a71eaeb77f2",
+    "content-hash": "53bf33ecb93bfc006f106c71dc3ee4ed",
     "packages": [
         {
             "name": "anhskohbo/no-captcha",
@@ -1875,6 +1875,50 @@
                 "logging"
             ],
             "time": "2016-06-23 14:07:52"
+        },
+        {
+            "name": "styde/blade-pagination",
+            "version": "5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StydeNet/blade-pagination.git",
+                "reference": "727b3c0f5028a610b90231162e4a1beed80b8807"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StydeNet/blade-pagination/zipball/727b3c0f5028a610b90231162e4a1beed80b8807",
+                "reference": "727b3c0f5028a610b90231162e4a1beed80b8807",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Styde\\BladePagination\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Duilio Palacios",
+                    "email": "admin@styde.net",
+                    "homepage": "http://styde.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel's pagination with Blade templating support",
+            "homepage": "http://github.com/StydeNet/blade-pagination",
+            "keywords": [
+                "blade",
+                "pagination"
+            ],
+            "time": "2015-08-02 02:23:34"
         },
         {
             "name": "swiftmailer/swiftmailer",

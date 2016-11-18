@@ -30,8 +30,7 @@
 <script src="{{ asset('js/materialize.js') }}"></script>
 @yield('scripts')
 <script>
-    // This is for
-    //window.Laravel = { csrfToken: '{{ csrf_token() }}' };
+
     // Stuff goes here
 
 </script>

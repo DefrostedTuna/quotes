@@ -6,7 +6,7 @@
             <div class="container">
                 <h3>Quotes</h3>
                 <hr>
-                <div class="row masonry">
+                <div class="row masonry quote__index--wrap">
                     @foreach($quotes as $quote)
                         <div class="col s12 m6 l4">
                             <div class="quote__card">

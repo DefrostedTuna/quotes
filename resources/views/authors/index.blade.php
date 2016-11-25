@@ -7,11 +7,7 @@
                 <h3>Authors</h3>
                 <hr>
                 @foreach($authors as $author)
-                    <div class="author__block">
-                        <a href="{{ route('authors.show', $author->id) }}">
-                            <span>{{ $author->name }}</span>
-                        </a>
-                    </div>
+                    <p class="author-link--black"><a href="{{ route('authors.show', $author->id) }}">{{ $author->name }}</a></p>
                 @endforeach
                 <hr>
                 <div class="center-align">

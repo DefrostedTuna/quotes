@@ -8632,6 +8632,11 @@ h5 {
   padding: 5px !important;
 }
 
+.outline-card {
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  padding: 1em;
+}
+
 .nav__full--container {
   z-index: 1;
   position: fixed;
@@ -8788,24 +8793,6 @@ footer img {
   padding: 100px 0;
 }
 
-.author__block {
-  padding: 1em;
-}
-
-.author__block a {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.author__block span {
-  display: block;
-  font-weight: 500;
-}
-
-.author__block:hover {
-  cursor: pointer;
-  background: #FAFAFA;
-}
-
 .authors__show--container {
   min-height: calc(100vh - 143px);
   background: #455A64;
@@ -8927,6 +8914,18 @@ footer img {
 }
 
 .author-link a:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.author-link--black a {
+  padding: 10px;
+  display: block;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.author-link--black a:hover {
   cursor: pointer;
   background: rgba(0, 0, 0, 0.1);
   border-radius: 5px;

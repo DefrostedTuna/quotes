@@ -8857,6 +8857,26 @@ footer img {
   transition: transform .5s ease, opacity .5s ease-in, -webkit-transform .5s ease;
 }
 
+.quote__index--wrap {
+  padding-top: 35px;
+}
+
+.quote__card {
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  padding: 1em;
+  margin-bottom: 1em;
+  background: white;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+
+.quote__card a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-family: "Merriweather", serif;
+}
+
 .full-height--container {
   min-height: 400px;
   height: 100vh;
@@ -8976,26 +8996,6 @@ footer img {
 .search__author span {
   display: block;
   font-weight: 500;
-}
-
-.quote__index--wrap {
-  padding-top: 35px;
-}
-
-.quote__card {
-  border: 1px solid rgba(0, 0, 0, 0.38);
-  padding: 1em;
-  margin-bottom: 1em;
-  background: white;
-  opacity: 0;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
-}
-
-.quote__card a {
-  color: rgba(0, 0, 0, 0.87);
-  display: block;
-  font-family: "Merriweather", serif;
 }
 
 /*# sourceMappingURL=app.css.map */

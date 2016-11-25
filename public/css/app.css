@@ -8691,6 +8691,27 @@ h5 {
   color: rgba(0, 0, 0, 0.54);
 }
 
+.nav__search {
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 240px;
+  margin-right: 25px;
+}
+
+.nav__search i {
+  position: absolute;
+  right: 0;
+  top: 30%;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.nav__search input {
+  display: inline-block;
+  width: 200px;
+  height: 2rem;
+}
+
 .nav-mobile--container {
   position: fixed;
   overflow-x: hidden;

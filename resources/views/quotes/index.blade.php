@@ -14,7 +14,7 @@
                                     <span>"{{ $quote->text }}"</span>
                                     <hr>
                                     <span>- {{ $quote->author->name }}</span>
-                                </a>
+                                </a>n
                             </div>
                         </div>
                     @endforeach

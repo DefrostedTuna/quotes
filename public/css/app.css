@@ -8987,6 +8987,9 @@ footer img {
   padding: 1em;
   margin-bottom: 1em;
   background: white;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
 }
 
 .quote__card a {

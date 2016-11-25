@@ -100,3 +100,7 @@ $('.masonry').masonry({
     itemSelector: '.col',
     //columnWidth: '.col'
 });
+
+$('.quote__card').css({
+    opacity: 1
+});

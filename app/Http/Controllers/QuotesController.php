@@ -31,6 +31,7 @@ class QuotesController extends Controller
     {
         $quote = $quote->findOrFail($id);
         $otherAuthors = $author->inRandomOrder()->take(5)->get();
+
         return view('quotes.show')
             ->with('quote', $quote)
             ->with('otherAuthors', $otherAuthors);

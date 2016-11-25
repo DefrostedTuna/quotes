@@ -1,13 +1,8 @@
 
 // Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600)
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script')
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i')
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Merriweather+Sans|Niconne|Tangerine')
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i')
-@import url('https://fonts.googleapis.com/css?family=Merienda:400,700')
-@import url('https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps')
-@import url('https://fonts.googleapis.com/css?family=Averia+Libre:300i,400,400i')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Cinzel|Lato:300,300i,400,400i')
+//@import url('https://fonts.googleapis.com/css?family=Cinzel')
+//@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i')
 
 // Variables
 @import "variables"
@@ -19,14 +14,11 @@
 @import "partials/all"
 @import "pages/all"
 
-[v-cloak]
-  display: none
-
-.input-field
-  position: relative
-
-.form-error
-  position: absolute
-  bottom: 0
-  left: 0
-  color: red
+.quote__card
+  border: 1px solid $text__black--disabled
+  padding: 1em
+  margin-bottom: 1em
+  background: white
+  a
+    color: $text__black--primary
+    display: block

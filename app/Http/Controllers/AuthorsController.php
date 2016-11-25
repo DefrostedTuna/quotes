@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Author;
 use App\Quote;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 
 class AuthorsController extends Controller
 {
     public function getIndex(Author $author)
     {
-        $authors = $author->all()->sortBy('name');
-
+        $authors = $author->orderBy('name')->paginate(10);
+        //dd($authors);
         return view('authors.index')
             ->with('authors', $authors);
     }

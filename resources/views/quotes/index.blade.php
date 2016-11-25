@@ -1,10 +1,30 @@
 @extends('layouts.main')
 
 @section('content')
-    @foreach($quotes as $quote)
-        <p>
-            {{ $quote->text }} <br>
-            {{ $quote->author->name }}
-        </p>
-    @endforeach
+    <div class="authors__index--container">
+        <div class="authors__index--wrap">
+            <div class="container">
+                <h3>Quotes</h3>
+                <hr>
+                <div class="row masonry">
+                    @foreach($quotes as $quote)
+                        <div class="col s12 m6 l4">
+                            <div class="quote__card">
+                                <a href="{{ route('quotes.show', $quote->id) }}">
+                                    <span>"{{ $quote->text }}"</span>
+                                    <hr>
+                                    <span>- {{ $quote->author->name }}</span>
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <hr>
+                <div class="center-align">
+                    {!! $quotes->render() !!}
+                </div>
+
+            </div>
+        </div>
+    </div>
 @endsection

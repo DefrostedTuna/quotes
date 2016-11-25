@@ -1,11 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i");
-@import url("https://fonts.googleapis.com/css?family=Cinzel|Merriweather+Sans|Niconne|Tangerine");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i");
-@import url("https://fonts.googleapis.com/css?family=Merienda:400,700");
-@import url("https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps");
-@import url("https://fonts.googleapis.com/css?family=Averia+Libre:300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i|Cinzel|Lato:300,300i,400,400i");
 /*!
  * Materialize v0.97.8 (http://materializecss.com)
  * Copyright 2014-2015 Materialize
@@ -6964,6 +6957,18 @@ body.inactive {
   -webkit-filter: blur(1px);
   filter: blur(1px); }
 
+[v-cloak] {
+  display: none; }
+
+.input-field {
+  position: relative; }
+
+.form-error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: red; }
+
 .font-14 {
   font-size: 14px; }
 
@@ -6987,6 +6992,9 @@ h5 {
 
 .relative {
   position: relative; }
+
+.pagination .active {
+  padding: 5px 10px; }
 
 .nav__full--container {
   z-index: 1;
@@ -7255,16 +7263,13 @@ footer {
     display: block;
     font-weight: 500; }
 
-[v-cloak] {
-  display: none; }
-
-.input-field {
-  position: relative; }
-
-.form-error {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  color: red; }
+.quote__card {
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  padding: 1em;
+  margin-bottom: 1em;
+  background: white; }
+  .quote__card a {
+    color: rgba(0, 0, 0, 0.87);
+    display: block; }
 
 /*# sourceMappingURL=app.css.map */

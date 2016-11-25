@@ -13,6 +13,11 @@
                         </a>
                     </div>
                 @endforeach
+                <hr>
+                <div class="center-align">
+                    {!! $authors->render() !!}
+                </div>
+
             </div>
         </div>
     </div>

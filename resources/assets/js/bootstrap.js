@@ -9,6 +9,7 @@ window.Cookies = require('js-cookie');
  */
 
 window.$ = window.jQuery = require('jquery');
+var jQueryBridget = require('jquery-bridget');
 
 /**
  * Vue is a modern JavaScript library for building interactive web interfaces
@@ -44,3 +45,6 @@ Vue.http.interceptors.push((request, next) => {
 //     broadcaster: 'pusher',
 //     key: 'your-pusher-key'
 // });
+
+var Masonry = require('masonry-layout');
+jQueryBridget( 'masonry', Masonry, $ );

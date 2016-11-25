@@ -95,3 +95,8 @@ $('.nav-mobile--mask').click(function() {
     $('body').removeClass('inactive');
     $('#root-body').removeClass('inactive');
 });
+
+$('.masonry').masonry({
+    itemSelector: '.col',
+    //columnWidth: '.col'
+});

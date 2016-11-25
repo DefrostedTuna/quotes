@@ -10,7 +10,7 @@ class QuotesController extends Controller
 {
     public function getIndex(Quote $quote)
     {
-        $quotes = $quote->all();
+        $quotes = $quote->orderBy('created_at', 'desc')->paginate(15);
 
         return view('quotes.index')
             ->with('quotes', $quotes);

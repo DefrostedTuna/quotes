@@ -12,3 +12,49 @@
     color: $text__black--primary
     display: block
     font-family: $font-family--quotes
+  span
+    display: block
+  span:first-child
+    font-style: italic
+  span:last-child
+    text-align: right
+
+.quotes__show--container
+  min-height: calc(100vh - 143px) // Header height + footer height
+  background: $background-color--main
+  color: $text__white--primary
+  padding: 100px 0
+
+.quotes__detail--wrap
+  color: $text__white--primary
+  border: 1px solid $text__white--secondary
+  padding: 1em
+  font-size: 21px
+
+.quotes__top-sidebar--wrap,
+.quotes__bottom-sidebar--wrap
+  color: $text__white--primary
+  border: 1px solid $text__white--secondary
+  padding: 1em
+  //font-size: 21px
+  margin-bottom: 20px
+
+.author-link
+  a
+    padding: 10px
+    display: block
+    color: $text__white--primary
+    &:hover
+      cursor: pointer
+      background: rgba(0,0,0, .1)
+      border-radius: 5px
+
+.quote-link
+  a
+    padding: 1em
+    display: block
+    color: $text__white--primary
+    &:hover
+      cursor: pointer
+      background: rgba(0,0,0, .1)
+      border-radius: 5px

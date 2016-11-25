@@ -50,4 +50,13 @@ class Author extends Model
     {
         return $this->quotes()->inRandomOrder()->first();
     }
+
+    public function hasMoreQuotes() {
+        return count($this->quotes) > 1 ? true : false;
+    }
+
+    public function getRandomQuotes($qty = 5)
+    {
+        return $this->quotes()->inRandomOrder()->take($qty)->get();
+    }
 }

@@ -8623,6 +8623,15 @@ h5 {
   padding: 5px 10px;
 }
 
+.quote-text {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
+
+.language-markup {
+  padding: 5px !important;
+}
+
 .nav__full--container {
   z-index: 1;
   position: fixed;
@@ -8875,6 +8884,64 @@ footer img {
   color: rgba(0, 0, 0, 0.87);
   display: block;
   font-family: "Merriweather", serif;
+}
+
+.quote__card span {
+  display: block;
+}
+
+.quote__card span:first-child {
+  font-style: italic;
+}
+
+.quote__card span:last-child {
+  text-align: right;
+}
+
+.quotes__show--container {
+  min-height: calc(100vh - 143px);
+  background: #455A64;
+  color: white;
+  padding: 100px 0;
+}
+
+.quotes__detail--wrap {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  font-size: 21px;
+}
+
+.quotes__top-sidebar--wrap,
+.quotes__bottom-sidebar--wrap {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  margin-bottom: 20px;
+}
+
+.author-link a {
+  padding: 10px;
+  display: block;
+  color: white;
+}
+
+.author-link a:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.quote-link a {
+  padding: 1em;
+  display: block;
+  color: white;
+}
+
+.quote-link a:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .full-height--container {

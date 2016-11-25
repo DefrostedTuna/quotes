@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Author;
 use App\Http\Requests\CreateQuoteFormRequest;
 use App\Quote;
 use Illuminate\Http\Request;
@@ -26,9 +27,12 @@ class QuotesController extends Controller
         return response()->json($quote->createQuote($request), 200);
     }
 
-    public function getShow($id, Quote $quote)
+    public function getShow($id, Quote $quote, Author $author)
     {
-        dd($quote->findOrFail($id));
-        return view('quotes.show');
+        $quote = $quote->findOrFail($id);
+        $otherAuthors = $author->inRandomOrder()->take(5)->get();
+        return view('quotes.show')
+            ->with('quote', $quote)
+            ->with('otherAuthors', $otherAuthors);
     }
 }

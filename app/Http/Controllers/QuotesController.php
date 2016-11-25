@@ -31,14 +31,4 @@ class QuotesController extends Controller
         dd($quote->findOrFail($id));
         return view('quotes.show');
     }
-
-    public function postUpdate()
-    {
-
-    }
-
-    public function postDestroy()
-    {
-
-    }
 }

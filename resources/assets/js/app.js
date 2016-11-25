@@ -96,11 +96,15 @@ $('.nav-mobile--mask').click(function() {
     $('#root-body').removeClass('inactive');
 });
 
-$('.masonry').masonry({
-    itemSelector: '.col',
-    //columnWidth: '.col'
+$(window).on('load', function(){
+    $masonryContainer = $('.masonry').masonry({
+        itemSelector: '.col',
+    });
+    $('.quote__card').css({
+        opacity: 1
+    });
 });
 
-$('.quote__card').css({
-    opacity: 1
-});
+
+
+

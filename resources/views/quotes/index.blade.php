@@ -11,9 +11,9 @@
                         <div class="col s12 m6 l4">
                             <div class="quote__card">
                                 <a href="{{ route('quotes.show', $quote->id) }}">
-                                    <span class="">"{{ $quote->text }}"</span>
+                                    <span>"{{ $quote->text }}"</span>
                                     <hr>
-                                    <span class="">- {{ $quote->author->name }}</span>
+                                    <span>- {{ $quote->author->name }}</span>
                                 </a>
                             </div>
                         </div>

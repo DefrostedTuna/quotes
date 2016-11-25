@@ -12,12 +12,12 @@ class AuthorsController extends Controller
     public function getIndex(Author $author)
     {
         $authors = $author->orderBy('name')->paginate(20);
-        //dd($authors);
+
         return view('authors.index')
             ->with('authors', $authors);
     }
 
-    public function getShow($id, Author $author, Quote $quote)
+    public function getShow($id, Author $author)
     {
         $author = $author->findOrFail($id);
         $quotes = $author->quotes;

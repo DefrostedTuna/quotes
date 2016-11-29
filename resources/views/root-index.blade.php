@@ -58,7 +58,7 @@
                                     <label for="input__author">Author</label>
                                 </div>
                                 <div class="input-field">
-                                    <textarea id="input__text" name="text" class="materialize-textarea" v-model="formInputs.text"></textarea>
+                                    <textarea id="input__text" name="text" class="materialize-textarea" v-model="formInputs.text" placeholder="Do not wrap in quotation marks, these will be applied automatically."></textarea>
                                     <span v-if="formErrors['text']" class="form-error" v-cloak>@{{ formErrors['text'][0] }}</span>
                                     <label for="input__text">Quote</label>
                                 </div>

@@ -26,7 +26,7 @@
                             I didn't want this to be something that you would have to sign up for. Simply enter a quote, then submit it. That's it.
                         </p>
                         <p class="font-21">
-                            If you would like to browse the quotes currently in the database then head over to the Quotes section. Likewise, a list of authors can be found under the authors under, you guessed it, the Authors section.
+                            If you would like to browse the quotes currently in the database then head over to the Quotes section. Likewise, a list of authors can be found under, you guessed it, the Authors section.
                         </p>
                     </div>
                     <div class="col l5 right-align hide-on-med-and-down">
